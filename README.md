@@ -1,9 +1,6 @@
 <a name="4"></a>
 ## 4 - Collaborative filtering learning algorithm <img align="left" src="./images/film_filter.png"     style=" width:40px;  " >
 
-Now, you will begin implementing the collaborative filtering learning
-algorithm. You will start by implementing the objective function. 
-
 The collaborative filtering algorithm in the setting of movie
 recommendations considers a set of $n$-dimensional parameter vectors
 $\mathbf{x}^{(0)},...,\mathbf{x}^{(n_m-1)}$, $\mathbf{w}^{(0)},...,\mathbf{w}^{(n_u-1)}$ and $b^{(0)},...,b^{(n_u-1)}$, where the
@@ -35,6 +32,3 @@ $$
 = \frac{1}{2}\sum_{j=0}^{n_u-1} \sum_{i=0}^{n_m-1}r(i,j)*(\mathbf{w}^{(j)} \cdot \mathbf{x}^{(i)} + b^{(j)} - y^{(i,j)})^2
 +\text{regularization}
 $$
-
-You should now write cofiCostFunc (collaborative filtering cost function) to return this cost.
-
