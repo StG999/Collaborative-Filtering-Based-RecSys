@@ -1,5 +1,4 @@
-<a name="4"></a>
-## 4 - Collaborative filtering learning algorithm <img align="left" src="./images/film_filter.png"     style=" width:40px;  " >
+## Collaborative filtering learning algorithm
 
 The collaborative filtering algorithm in the setting of movie
 recommendations considers a set of $n$-dimensional parameter vectors
