@@ -11,21 +11,19 @@ learn the parameter vectors $\mathbf{x}^{(0)},...,\mathbf{x}^{(n_m-1)},
 \mathbf{w}^{(0)},...,\mathbf{w}^{(n_u-1)}$  and $b^{(0)},...,b^{(n_u-1)}$ that produce the best fit (minimizes
 the squared error).
 
-You will complete the code in cofiCostFunc to compute the cost
-function for collaborative filtering. 
-
 
 <a name="4.1"></a>
 ### 4.1 Collaborative filtering cost function
 
 The collaborative filtering cost function is given by
 $$J({\mathbf{x}^{(0)},...,\mathbf{x}^{(n_m-1)},\mathbf{w}^{(0)},b^{(0)},...,\mathbf{w}^{(n_u-1)},b^{(n_u-1)}})= \frac{1}{2}\sum_{(i,j):r(i,j)=1}(\mathbf{w}^{(j)} \cdot \mathbf{x}^{(i)} + b^{(j)} - y^{(i,j)})^2
-+\underbrace{
++
 \frac{\lambda}{2}
 \sum_{j=0}^{n_u-1}\sum_{k=0}^{n-1}(\mathbf{w}^{(j)}_k)^2
 + \frac{\lambda}{2}\sum_{i=0}^{n_m-1}\sum_{k=0}^{n-1}(\mathbf{x}_k^{(i)})^2
-}_{regularization}
-\tag{1}$$
+}
+\tag{1}
+$$
 The first summation in (1) is "for all $i$, $j$ where $r(i,j)$ equals $1$" and could be written:
 
 $$
