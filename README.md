@@ -12,7 +12,7 @@ the squared error).
 
 
 <a name="4.1"></a>
-### 4.1 Collaborative filtering cost function
+### Collaborative filtering cost function
 
 The collaborative filtering cost function is given by
 $$J({\mathbf{x}^{(0)},...,\mathbf{x}^{(n_m-1)},\mathbf{w}^{(0)},b^{(0)},...,\mathbf{w}^{(n_u-1)},b^{(n_u-1)}})= \frac{1}{2}\sum_{(i,j):r(i,j)=1}(\mathbf{w}^{(j)} \cdot \mathbf{x}^{(i)} + b^{(j)} - y^{(i,j)})^2
